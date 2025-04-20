@@ -1,0 +1,66 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 220 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 15%;
+
+    --primary: 210 100% 35%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 200 70% 50%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 20% 92%;
+    --muted-foreground: 220 20% 40%;
+
+    --accent: 175 70% 41%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 215 100% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .glow-element {
+    box-shadow: 0 0 15px rgba(24, 144, 255, 0.5);
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-electric-600 to-energy-500 text-transparent bg-clip-text;
+  }
+}
+
+/* Charts customization */
+.apexcharts-tooltip {
+  @apply bg-white shadow-lg border border-gray-100 !important;
+}
+
+.apexcharts-tooltip-title {
+  @apply bg-gray-50 border-b border-gray-100 !important;
+}
