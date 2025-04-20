@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Button size="lg" className="bg-gradient-to-r from-electric-600 to-energy-500 hover:from-electric-700 hover:to-energy-600 text-white">
-                To be edited in code 
+                see results
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
